@@ -1,0 +1,183 @@
+* {
+  margin:10px;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+@font-face {
+  font-family: "fuggle";
+  src: url("./fonts/Fuggles-Regular.ttf");
+}
+
+@font-face {
+  font-family: "pecita";
+  src: url("./fonts/Pecita.otf");
+}
+
+@font-face {
+  font-family: "right";
+  src: url("./fonts/Righteous-Regular.ttf");
+}
+
+html,body {
+  width: 100vw;
+  color: #111;
+  background-color: rgb(247, 248, 239);
+  overflow-x: hidden;
+  font-family: "right";
+
+}
+
+#Model{
+  z-index: 2;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.container h2{
+  font-size: 2em;
+}
+
+.text {
+  width: 40%;
+  margin: 100px;
+
+}
+
+.space{
+  margin-top: 50vh;
+}
+
+.space2{
+  margin-top: 20vh;
+  margin-left: 10vh;
+  color: rgb(38, 26, 11);
+  padding: 10px;
+}
+
+
+.distri{
+  text-align: center;
+}
+
+.recette{
+  left: 0;
+  width: 500px;
+
+}
+
+.recette2{
+  position: absolute;
+  right: 0;
+  width: 500px;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+}
+
+ img{
+  width: 300px; ;
+}
+p{
+  font-family: 'pecita';
+  font-size: 25px;
+}
+
+
+.box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.boxe{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.custom-cursor {
+  background: #d12f1b;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+.logo {
+width: 50px;}
+
+
+.box h2 {
+  text-transform: uppercase;
+  color:#613414;
+}
+
+
+
+
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-transform: uppercase;
+}
+
+
+.font{
+ font-family: "pecita";
+ font-size: 40px;
+ color: #e83d27;
+}
+
+.color{
+  color:#e83d27 ;
+}
+
+
+.end{
+  margin-top: 10vh;
+}
+
+.footer a{
+  color: #111;
+  text-decoration: none;
+}
+
+.footer a :hover{
+  color: #e83d27;
+
+}
+
+
+.droit{
+  text-align: center;
+  color: #474125;
+}
+
+.droit img{
+  width:600px ;
+
+}
+
+

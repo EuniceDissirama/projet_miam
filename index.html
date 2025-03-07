@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>artisans atelier</title>
+  <link rel="icon" href="./img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="style2.css" />
+</head>
+
+<body>
+  <!-- --curseur -->
+  <div class="custom-cursor" id="cursor"></div>
+
+  <!-- navbar -->
+  <nav>
+    <img src="./img/logo.png" alt="" class="logo">
+  </nav>
+
+  <!-- premiere pqrtie -->
+  <section class="container">
+    <div class="text left space">   
+      <h2 style="color: orange;">Choix des consommateurs</h2>
+      <p>choix des consommateurs annee 2023</p>       
+    </div>
+    
+    <model-viewer id="Model" src="./1.glb" camera-controls auto-rotate disable-zoom
+      style="width: 100vw; height: 80vh;"></model-viewer>
+    
+    <div class="text right">
+      <h2 style=" color: orange;">Produit 100% biologique</h2>
+      <p>savoureux et croquant</p>
+      
+    </div>
+  </section>
+
+  <!-- deuxieme pqrtie -->
+
+  <section class="box">
+    <div class=" text right">
+      <h2>NOS INGREDIENTS</h2>
+      <p>Respectueux de l'enviroonelent , nos ingredients sont selectioones avec soins et cultives de facon saine et
+        ecoresponsable</p>
+    </div>
+    <div class=" left"></div>
+  </section>
+
+
+  <!-- troisieme pqrtie -->
+  <section class="box">
+    <div class="  right"></div>
+    <div class=" left">
+      <h2>Composition</h2>
+      <p>Sans concervateurs chimiques ajoutes <br>
+        Tout est fait pour qu' a chaque bouchee ,<br>
+        vous kiffez sans mettre votre sante en jeu</p>
+    </div>
+  </section>
+
+   <!-- quatrieme pqrtie -->
+  <div class="droit space2"><h3>nouvelle<span class="font">saveur</span></h3></div>
+  <div class="box">
+    <div class="text">
+      <img src="./img/left1.png" alt="">
+    </div>
+    
+    <model-viewer id="Model2" src="./2.glb" camera-controls auto-rotate disable-zoom
+      style="width: 100vw; height: 80vh;"></model-viewer>
+     
+      <div class="text">
+        <img src="./img/right1.png" alt="">
+      </div>
+      
+  </div>
+  
+
+     <!-- cinquieme pqrtie -->
+
+  <div class="space2">
+
+    <div class="recette ">
+       <p><span class="font">La recette </span><br>
+      ,, En 1999 je goutais pour la premiere fois les petits biscuits de ma grande mere  
+      Aujourdhui nous tenons a garder sa recette secrete tout en vous faisans goute ces merveilleux petits biscuits,,<br>Le createur de la marque</p>
+     
+    </div>
+
+    <div class="recette2 ">
+      <p><span class="font">La recette pour tous </span><br>
+        Vous la preferez sales , sccree , epicee ou encore aromate
+        Pour Tous les gouts
+      </p>
+   
+    </div>
+    
+  </div>
+
+
+   <!-- distributeur -->
+  <div class="distri space2">
+  <div class="  space">
+    <h2 style="color: rgba(254, 166, 2, 0.97);">Nos differentes saveurs</h2>
+    <br>
+    <div class="boxe">
+      <h3>saveur nature</h2>
+        <h3>sales et epices</h2>
+          <h3>sucres</h2>
+            <h3>saveur vanille</h2>
+    </div>
+  </div>
+  </div>
+ 
+<!-- models disponibles -->
+  <section class="box ">
+    <!-- <div class="distri">
+      <div class="  space">
+        <p>plusieurs saveurs pour tous les gouts</p>
+        <div class="boxe color">
+          <p>saveur nature</p>
+            <p>sales et epices</p>
+              <p>sucres</p>
+                <p>saveur vanille</p>
+        </div>
+      </div>
+      </div> -->
+    <model-viewer src="./2.glb" camera-controls auto-rotate disable-zoom
+      style="width: 50vw; height: 100vh;"></model-viewer>
+
+      <model-viewer src="./3.glb" camera-controls auto-rotate disable-zoom
+      style="width: 50vw; height: 100vh;"></model-viewer>
+
+    <model-viewer src="./4.glb" camera-controls auto-rotate disable-zoom
+      style="width: 50vw; height: 100vh;"></model-viewer>
+
+    <model-viewer src="./5.glb" camera-controls auto-rotate disable-zoom
+      style="width: 50vw; height: 100vh;"></model-viewer>
+  </section>
+
+ 
+  <hr>
+
+<!-- footer -->
+  <section class="footer">
+    <div class="boxe end">
+      <a href="#"> <p>instagram</p></a>
+      <a href="#"> <p>facebook</p></a>
+      <a href="#"> <p>tiktok</p></a>
+    </div>
+   </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="script2.js"></script>
+</body>
+
+</html>
