@@ -4,171 +4,268 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>artisans atelier</title>
-  <link rel="icon" href="./img/logo.png" type="image/x-icon">
+  <title>Miam | Biscuits 100 % biologiques</title>
+  <meta name="description"
+    content="Miam, les atchonmons : une spécialité togolaise croquante, 100 % biologique, sans conservateur ni gluten. Nature, salés et épicés, sucrés ou à la vanille.">
+  <meta name="theme-color" content="#f7f8ef">
+
+  <!-- Aperçu lors d'un partage (WhatsApp, Facebook, Instagram…) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Miam | Biscuits 100 % biologiques">
+  <meta property="og:description"
+    content="Les atchonmons Miam : une spécialité togolaise croquante, sans conservateur ni gluten. Faites « Miam, miam ! »">
+  <meta property="og:image" content="img/partage.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="./img/logo.png" type="image/png">
   <link rel="stylesheet" href="style2.css" />
 </head>
 
-<body>
-  <!-- --curseur -->
+<body class="is-loading">
+  <!-- ecran de chargement -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <img src="./img/logo.png" alt="" class="loader__mascot">
+    <p class="loader__word">Miam<span>…</span></p>
+    <div class="loader__bar"><span id="loaderBar"></span></div>
+  </div>
+
+  <!-- curseur -->
   <div class="custom-cursor" id="cursor"></div>
 
   <!-- navbar -->
-  <nav>
-    <img src="./img/logo.png" alt="" class="logo">
-  </nav>
+  <header class="nav">
+    <a href="#top" class="brand">
+      <img src="./img/logo.png" alt="" class="logo">
+      Miam
+    </a>
+    <ul class="nav__links">
+      <li><a href="#histoire">Notre histoire</a></li>
+      <li><a href="#saveurs">Saveurs</a></li>
+      <li><a href="#contact">Nous trouver</a></li>
+    </ul>
+    <button class="sound-toggle" id="soundToggle" type="button" aria-pressed="false" aria-label="Activer le son">
+      <span class="sound-toggle__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="sound-toggle__label">Son</span>
+    </button>
+  </header>
 
-  <!-- premiere pqrtie -->
-  <section class="container">
-    <div class="text left space">   
-      <h2 style="color: orange;">Choix des consommateurs</h2>
-      <p>choix des consommateurs annee 2023</p>       
-    </div>
-    
-    <model-viewer id="Model" src="./1.glb" camera-controls auto-rotate disable-zoom
-      style="width: 100vw; height: 80vh;"></model-viewer>
-    
-    <div class="text right">
-      <h2 style=" color: orange;">Produit 100% biologique</h2>
-      <p>savoureux et croquant</p>
-      
-    </div>
-  </section>
+  <main>
+    <!-- hero -->
+    <section class="hero" id="top">
+      <canvas class="crumbs" id="crumbs" aria-hidden="true"></canvas>
+      <div class="hero__wordmark" aria-hidden="true">Miam</div>
 
-  <!-- deuxieme pqrtie -->
-
-  <section class="box">
-    <div class=" text right">
-      <h2>NOS INGREDIENTS</h2>
-      <p>Respectueux de l'enviroonelent , nos ingredients sont selectioones avec soins et cultives de facon saine et
-        ecoresponsable</p>
-    </div>
-    <div class=" left"></div>
-  </section>
-
-
-  <!-- troisieme pqrtie -->
-  <section class="box">
-    <div class="  right"></div>
-    <div class=" left">
-      <h2>Composition</h2>
-      <p>Sans concervateurs chimiques ajoutes <br>
-        Tout est fait pour qu' a chaque bouchee ,<br>
-        vous kiffez sans mettre votre sante en jeu</p>
-    </div>
-  </section>
-
-   <!-- quatrieme pqrtie -->
-  <div class="droit space2"><h3>nouvelle<span class="font">saveur</span></h3></div>
-  <div class="box">
-    <div class="text">
-      <img src="./img/left1.png" alt="">
-    </div>
-    
-    <model-viewer id="Model2" src="./2.glb" camera-controls auto-rotate disable-zoom
-      style="width: 100vw; height: 80vh;"></model-viewer>
-     
-      <div class="text">
-        <img src="./img/right1.png" alt="">
-      </div>
-      
-  </div>
-  
-
-     <!-- cinquieme pqrtie -->
-
-  <div class="space2">
-
-    <div class="recette ">
-       <p><span class="font">La recette </span><br>
-      ,, En 1999 je goutais pour la premiere fois les petits biscuits de ma grande mere  
-      Aujourdhui nous tenons a garder sa recette secrete tout en vous faisans goute ces merveilleux petits biscuits,,<br>Le createur de la marque</p>
-     
-    </div>
-
-    <div class="recette2 ">
-      <p><span class="font">La recette pour tous </span><br>
-        Vous la preferez sales , sccree , epicee ou encore aromate
-        Pour Tous les gouts
-      </p>
-   
-    </div>
-    
-  </div>
-
-
-   <!-- distributeur -->
-  <div class="distri space2">
-  <div class="  space">
-    <h2 style="color: rgba(254, 166, 2, 0.97);">Nos differentes saveurs</h2>
-    <br>
-    <div class="boxe">
-      <h3>saveur nature</h2>
-        <h3>sales et epices</h2>
-          <h3>sucres</h2>
-            <h3>saveur vanille</h2>
-    </div>
-  </div>
-  </div>
- 
-<!-- models disponibles -->
-  <section class="box ">
-    <!-- <div class="distri">
-      <div class="  space">
-        <p>plusieurs saveurs pour tous les gouts</p>
-        <div class="boxe color">
-          <p>saveur nature</p>
-            <p>sales et epices</p>
-              <p>sucres</p>
-                <p>saveur vanille</p>
+      <div class="hero__text hero__text--left">
+        <div class="badge">
+          <strong>Choix des consommateurs</strong>
+          <span>Année 2023</span>
         </div>
       </div>
-      </div> -->
-    <model-viewer src="./2.glb" camera-controls auto-rotate disable-zoom
-      style="width: 50vw; height: 100vh;"></model-viewer>
 
-      <model-viewer src="./3.glb" camera-controls auto-rotate disable-zoom
-      style="width: 50vw; height: 100vh;"></model-viewer>
+      <model-viewer id="Model" src="./1.glb" alt="Paquet de biscuits Miam en 3D" camera-controls auto-rotate
+        disable-zoom></model-viewer>
 
-    <model-viewer src="./4.glb" camera-controls auto-rotate disable-zoom
-      style="width: 50vw; height: 100vh;"></model-viewer>
+      <div class="hero__text hero__text--right">
+        <span class="eyebrow">Spécialité togolaise</span>
+        <h1 data-split>Produit 100&nbsp;% biologique</h1>
+        <p class="hero__tagline">Savoureux et croquant</p>
+      </div>
 
-    <model-viewer src="./5.glb" camera-controls auto-rotate disable-zoom
-      style="width: 50vw; height: 100vh;"></model-viewer>
-  </section>
+      <span class="hero__scroll">Faites défiler</span>
+    </section>
 
- 
-  <hr>
+    <!-- ingredients -->
+    <section class="feature" id="ingredients">
+      <div class="card">
+        <span class="card__number">01</span>
+        <h2 data-split>Nos ingrédients</h2>
+        <p>Respectueux de l'environnement, nos ingrédients sont sélectionnés avec soin et cultivés de façon saine et
+          écoresponsable.</p>
+        <ul class="ingredients">
+          <li>Farine de riz</li>
+          <li>Amidon</li>
+          <li>Œuf</li>
+          <li>Huile</li>
+          <li>Sel</li>
+          <li>Épices</li>
+        </ul>
+      </div>
+      <div class="feature__slot" data-slot="1"></div>
+    </section>
 
-<!-- footer -->
-  <section class="footer">
-    <div class="boxe end">
-      <a href="#"> <p>instagram</p></a>
-      <a href="#"> <p>facebook</p></a>
-      <a href="#"> <p>tiktok</p></a>
+    <!-- composition -->
+    <section class="feature feature--reverse">
+      <div class="feature__slot" data-slot="2"></div>
+      <div class="card">
+        <span class="card__number">02</span>
+        <h2 data-split>Composition</h2>
+        <p>Sans conservateurs chimiques ajoutés.<br>
+          Tout est fait pour qu'à chaque bouchée,
+          vous kiffiez sans mettre votre santé en jeu.</p>
+        <ul class="zeros">
+          <li><strong>Zéro</strong>conservateur</li>
+          <li><strong>Zéro</strong>gluten</li>
+          <li><strong>100&nbsp;%</strong>biologique</li>
+        </ul>
+        <p class="card__note">Allergène&nbsp;: contient du lactose.</p>
+      </div>
+    </section>
+
+    <!-- nouvelle saveur -->
+    <section class="new-flavor">
+      <h2 class="section-title" data-split>Nouvelle <span class="script">saveur</span></h2>
+      <div class="new-flavor__stage">
+        <div class="note note--left">
+          <img src="./img/left1.png" alt="Lait de soja, noix de cajou">
+        </div>
+
+        <model-viewer id="Model2" src="./2.glb" alt="Nouvelle saveur Miam en 3D" loading="lazy" camera-controls
+          auto-rotate disable-zoom></model-viewer>
+
+        <div class="note note--right">
+          <img src="./img/right1.png" alt="Sans gluten, sans conservateur">
+        </div>
+      </div>
+    </section>
+
+    <!-- notre histoire -->
+    <section class="story" id="histoire">
+      <div class="story__intro">
+        <span class="eyebrow">Notre histoire</span>
+        <h2 class="section-title section-title--left" data-split>Le <span class="script">atchonmon</span></h2>
+        <p class="story__lead">Une spécialité togolaise croquante et très nutritive. Un délicieux snack aux
+          multiples saveurs, croustillant et entier, fait avec amour pour vous&nbsp;!</p>
+        <span class="made-in">Made in Togo</span>
+      </div>
+
+      <figure class="quote">
+        <h3>La recette</h3>
+        <blockquote>
+          En 1999, je goûtais pour la première fois les petits biscuits de ma grand-mère.
+          Aujourd'hui, nous tenons à garder sa recette secrète tout en vous faisant goûter ces merveilleux petits
+          biscuits.
+        </blockquote>
+        <figcaption>
+          <img src="./img/logo.png" alt="">
+          Le créateur de la marque
+        </figcaption>
+      </figure>
+
+      <div class="story__packs">
+        <img src="./img/paquets.webp" alt="Les quatre paquets Miam : nature, salés et épicés, sucrés, vanille"
+          loading="lazy">
+        <p class="story__all"><span class="script">La recette pour tous</span> Vous la préférez salée, sucrée, épicée
+          ou encore aromatisée&nbsp;? Pour tous les goûts&nbsp;!</p>
+      </div>
+    </section>
+
+    <!-- saveurs interactives -->
+    <section class="flavors" id="saveurs" data-flavor="nature">
+      <h2 class="section-title" data-split>Nos différentes <span class="script">saveurs</span></h2>
+
+      <div class="flavor-tabs" role="tablist" aria-label="Choisir une saveur">
+        <button role="tab" aria-selected="true" data-flavor="nature">Nature</button>
+        <button role="tab" aria-selected="false" data-flavor="epices">Salés et épicés</button>
+        <button role="tab" aria-selected="false" data-flavor="sucres">Sucrés</button>
+        <button role="tab" aria-selected="false" data-flavor="vanille">Vanille</button>
+      </div>
+
+      <div class="flavor-stage">
+        <model-viewer id="flavorModel" src="./2.glb" alt="Paquet Miam Atchonmons nature en 3D" loading="lazy"
+          camera-controls auto-rotate disable-zoom camera-orbit="-30deg 85deg auto"></model-viewer>
+
+        <article class="flavor-card" role="tabpanel" aria-live="polite">
+          <span class="flavor-card__kicker">Biscuits</span>
+          <h3 id="flavorName">Atchonmons nature</h3>
+          <p id="flavorText">La recette d'origine, simple et croustillante, pour retrouver le vrai goût de
+            l'atchonmon.</p>
+          <ul class="zeros zeros--light">
+            <li><strong>Zéro</strong>conservateur</li>
+            <li><strong>Zéro</strong>gluten</li>
+            <li><strong>120&nbsp;g</strong>le paquet</li>
+          </ul>
+          <details class="nutrition">
+            <summary>Valeurs nutritionnelles <span>(portion de 30&nbsp;g, environ 4 unités)</span></summary>
+            <dl>
+              <div><dt>Énergie</dt><dd>148 kcal</dd></div>
+              <div><dt>Glucides</dt><dd>16,2 g</dd></div>
+              <div><dt>Protéines</dt><dd>2,5 g</dd></div>
+              <div><dt>Lipides totaux</dt><dd>8,4 g</dd></div>
+              <div><dt>dont saturés</dt><dd>4,2 g</dd></div>
+              <div><dt>Lipides trans</dt><dd>0 g</dd></div>
+              <div><dt>Fibres alimentaires</dt><dd>0,5 g</dd></div>
+              <div><dt>Sodium</dt><dd>146 mg</dd></div>
+            </dl>
+          </details>
+        </article>
+      </div>
+    </section>
+
+    <!-- ou nous trouver -->
+    <section class="contact" id="contact">
+      <div class="contact__info">
+        <span class="eyebrow">Nous trouver</span>
+        <h2 class="section-title section-title--left" data-split>Essayez&nbsp;! Faites <span class="script">«&nbsp;Miam,
+            miam&nbsp;!&nbsp;»</span></h2>
+        <p>Une envie d'atchonmons, une question ou une commande pour votre boutique&nbsp;? Écrivez-nous.</p>
+        <ul class="contact__list">
+          <li>
+            <span class="contact__label">Produit par</span>
+            Miam Industrie
+          </li>
+          <li>
+            <span class="contact__label">Adresse</span>
+            Zone industrielle d'Adétikopé, Togo
+          </li>
+          <li>
+            <span class="contact__label">E-mail</span>
+            <a href="mailto:miamindustrie@gmail.com">miamindustrie@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact__form" id="contactForm">
+        <label>
+          Votre nom
+          <input type="text" name="nom" autocomplete="name" required>
+        </label>
+        <label>
+          Votre e-mail
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+        <label>
+          Votre message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="button">Envoyer le message</button>
+        <p class="contact__hint">Le message s'ouvre dans votre application de messagerie.</p>
+      </form>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer__top">
+      <a href="#top" class="brand">
+        <img src="./img/logo.png" alt="" class="logo">
+        Miam
+      </a>
+      <ul class="socials">
+        <li><a href="#">instagram</a></li>
+        <li><a href="#">facebook</a></li>
+        <li><a href="#">tiktok</a></li>
+      </ul>
     </div>
-   </section>
+    <p class="footer__bottom">© Miam Industrie · Biscuits 100&nbsp;% biologiques · Made in Togo</p>
+  </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer@4.4.0/dist/model-viewer.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="https://unpkg.com/split-type"></script>
   <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
   <script src="script2.js"></script>
 </body>
 
